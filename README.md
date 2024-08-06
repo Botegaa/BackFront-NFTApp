@@ -1,6 +1,6 @@
 # BackFront NFT App
 
-Welcome to the NFT App Login Page! This project is a class assignment designed to showcase a login interface for an NFT (Non-Fungible Token) app. Built with Swift, this app serves as the starting point for a broader NFT application.
+Welcome to the BackFront NFT App! This project is a class assignment designed to showcase a login interface for an NFT (Non-Fungible Token) app. Built with Swift, this app serves as the starting point for a broader NFT application.
 
 ## Features
 

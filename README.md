@@ -26,8 +26,7 @@ To get this project up and running on your local machine, follow these steps:
    ```bash
    git clone https:https://github.com/Botegaa/BackFront-NFTApp
 
-   Open the Project:
-
+- **Open the Project:**
 Open NFTAppLoginPage.xcodeproj in Xcode.
 
 - **Build and Run:**

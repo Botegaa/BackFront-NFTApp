@@ -24,7 +24,7 @@ To get this project up and running on your local machine, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/nft-app-login-page.git
+   git clone https:https://github.com/Botegaa/BackFront-NFTApp
 
    Open the Project:
 

@@ -238,7 +238,7 @@ class LoginScreen: UIView {
             signInMetamaskImageView.heightAnchor.constraint(equalToConstant: 20),
             signInMetamaskImageView.widthAnchor.constraint(equalToConstant: 20),
             
-            signInMetamaskLabel.leadingAnchor.constraint(equalTo: signInMetamaskImageView.trailingAnchor,constant: 25),
+            signInMetamaskLabel.leadingAnchor.constraint(equalTo: signInMetamaskImageView.trailingAnchor,constant: 24),
             signInMetamaskLabel.centerYAnchor.constraint(equalTo: signInMetamaskView.centerYAnchor)
         ])
     }

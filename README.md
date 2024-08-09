@@ -68,3 +68,10 @@ Para configurar este projeto e executá-lo em sua máquina local, siga estas eta
    ```bash
    git clone https:https://github.com/Botegaa/BackFront-NFTApp
 
+- **Abra o Projeto:**
+Abra o arquivo BackFrontNFTApp.xcodeproj no Xcode.
+
+- **Compile e Execute:**
+Selecione um dispositivo ou simulador alvo e clique no botão 'Executar' no Xcode.
+
+

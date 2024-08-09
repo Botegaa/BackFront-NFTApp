@@ -40,9 +40,9 @@ click the 'Run' button in Xcode.
 
 ## Portugues-BR ![Brazil](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/br.png "Brazil")
 
-# BackFront NFT App
+#  App BackFront NFT
 
-Bem-vindo ao BackFront NFT App! Este projeto apresenta uma interface de login para um aplicativo NFT. Desenvolvido em Swift, este app serve como ponto de partida para uma aplicação NFT mais ampla.
+Bem-vindo ao App BackFront NFT! Este projeto apresenta uma interface de login para um aplicativo NFT. Desenvolvido em Swift, este app serve como ponto de partida para uma aplicação NFT mais ampla.
 
 ## Funcionalidades
 

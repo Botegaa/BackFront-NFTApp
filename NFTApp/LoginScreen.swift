@@ -12,7 +12,7 @@ class LoginScreen: UIView {
     lazy var subImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "BGLogin")
+        image.image = UIImage(named:  "BGLogin")
         return image
     }()
     

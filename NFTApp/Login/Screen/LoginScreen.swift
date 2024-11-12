@@ -23,7 +23,7 @@ class LoginScreen: UIView {
     lazy var subImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "BGLogin")
+        image.image = UIImage(named:  "BGLogin")
         return image
     }()
     
@@ -227,7 +227,7 @@ class LoginScreen: UIView {
             subLoginImageView.topAnchor.constraint(equalTo: recoveryPasswordButton.bottomAnchor, constant: 36),
             subLoginImageView.leadingAnchor.constraint(equalTo: loginTextField.leadingAnchor),
             subLoginImageView.trailingAnchor.constraint(equalTo: loginTextField.trailingAnchor),
-            subLoginImageView.heightAnchor.constraint(equalToConstant: 43),
+            subLoginImageView.heightAnchor.constraint(equalToConstant:  43),
             
             loginButton.topAnchor.constraint(equalTo: subLoginImageView.topAnchor),
             loginButton.leadingAnchor.constraint(equalTo: subLoginImageView.leadingAnchor),

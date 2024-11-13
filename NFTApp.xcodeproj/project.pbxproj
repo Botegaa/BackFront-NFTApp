@@ -32,6 +32,8 @@
 		36487FAE2CE3FBB400E03AF0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 36487FAD2CE3FBB400E03AF0 /* FirebaseStorage */; };
 		36487FB02CE3FBB400E03AF0 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 36487FAF2CE3FBB400E03AF0 /* FirebaseStorageCombine-Community */; };
 		36487FB22CE3FBB400E03AF0 /* FirebaseVertexAI in Frameworks */ = {isa = PBXBuildFile; productRef = 36487FB12CE3FBB400E03AF0 /* FirebaseVertexAI */; };
+		36487FC32CE4FF9000E03AF0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36487FC22CE4FF9000E03AF0 /* UIViewController+Extension.swift */; };
+		36487FC52CE5040C00E03AF0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36487FC42CE5040C00E03AF0 /* String+Extension.swift */; };
 		366F94C02C613CEF00C63066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366F94BF2C613CEF00C63066 /* AppDelegate.swift */; };
 		366F94C22C613CEF00C63066 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366F94C12C613CEF00C63066 /* SceneDelegate.swift */; };
 		366F94C42C613CEF00C63066 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366F94C32C613CEF00C63066 /* LoginVC.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		36487F802CE3F8ED00E03AF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		36487FC22CE4FF9000E03AF0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		36487FC42CE5040C00E03AF0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		366F94BC2C613CEF00C63066 /* NFTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366F94BF2C613CEF00C63066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		366F94C12C613CEF00C63066 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,23 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		36487FC02CE410BE00E03AF0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				36487FC12CE4FF3B00E03AF0 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		36487FC12CE4FF3B00E03AF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				36487FC22CE4FF9000E03AF0 /* UIViewController+Extension.swift */,
+				36487FC42CE5040C00E03AF0 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		366F94B32C613CEF00C63066 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +143,7 @@
 		366F94BE2C613CEF00C63066 /* NFTApp */ = {
 			isa = PBXGroup;
 			children = (
+				36487FC02CE410BE00E03AF0 /* Utils */,
 				36487F7E2CE3F2C000E03AF0 /* Login */,
 				366F94BF2C613CEF00C63066 /* AppDelegate.swift */,
 				366F94C12C613CEF00C63066 /* SceneDelegate.swift */,
@@ -237,6 +259,8 @@
 				366F94C42C613CEF00C63066 /* LoginVC.swift in Sources */,
 				366F94D42C61487400C63066 /* LoginScreen.swift in Sources */,
 				366F94C02C613CEF00C63066 /* AppDelegate.swift in Sources */,
+				36487FC32CE4FF9000E03AF0 /* UIViewController+Extension.swift in Sources */,
+				36487FC52CE5040C00E03AF0 /* String+Extension.swift in Sources */,
 				366F94C22C613CEF00C63066 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

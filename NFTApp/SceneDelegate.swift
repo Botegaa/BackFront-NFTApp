@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -21,7 +20,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.rootViewController = vc
         window.makeKeyAndVisible()
         self.window = window
-        FirebaseApp.configure()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

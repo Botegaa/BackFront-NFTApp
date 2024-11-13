@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginVC: UIViewController {
     
     var loginScreen : LoginScreen?
-    
+    var auth: Auth?
     
     override func loadView() {
         loginScreen = LoginScreen()
@@ -21,17 +22,49 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dismissKeyBoard()
+        auth = Auth.auth()
         loginScreen?.delegate(delegate: self)
         loginScreen?.cofigTextFieldsDelegate(delegate: self)
+        isEnabledLoginButton(false)
+        
     }
     
+    func validateTextFields(){
+        if (loginScreen?.emailTextField.text ?? "").isValid(validType: .email) && (loginScreen?.passwordTextField.text ?? "").isValid(validType: .password){
+            isEnabledLoginButton(true)
+        }else{
+            isEnabledLoginButton(false)
+        }
+    }
+    
+    func isEnabledLoginButton(_ isEnabled: Bool){
+        if isEnabled {
+            loginScreen?.loginButton.setTitleColor(.white, for: .normal)
+            loginScreen?.loginButton.isEnabled = true
+            loginScreen?.subLoginImageView.alpha = 1
+        }else{
+            loginScreen?.loginButton.setTitleColor(.lightGray, for: .normal)
+            loginScreen?.loginButton.isEnabled = false
+            loginScreen?.subLoginImageView.alpha = 0.4
+            
+        }
+            
+    }
     
 }
 
 
 extension LoginVC: LoginScreenProtocol{
     func tappedLoginButton() {
-        print(#function)
+        
+        auth?.signIn(withEmail: loginScreen?.emailTextField.text ?? "", password: loginScreen?.passwordTextField.text ?? "", completion: {user, error in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+            }else{
+                print("deu certo poha")
+            }
+        })
+
     }
 }
 
@@ -65,6 +98,7 @@ extension LoginVC: UITextFieldDelegate{
                 break
             }
         }
+        validateTextFields()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
